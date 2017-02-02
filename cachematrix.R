@@ -30,9 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Finds the inverse of a square matrix and caches the result.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-        ## Use 'solve(X)' fn. Where X is a sq. matrix. (assume invertible)
-        
+
         inv <- x$getinverse()
         
         if (!is.null(inv)) {
